@@ -1,0 +1,7 @@
+employee.my_module_list:
+  path: '/employeelist'
+  defaults:
+    _controller: '\Drupal\employee\Controller\employeeController::employeeList'
+    _title: 'Employee list'
+  requirements:
+    _permission: 'access content'

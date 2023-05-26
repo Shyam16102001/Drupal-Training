@@ -1,0 +1,7 @@
+addEmployee.my_module_list:
+  path: '/addemployee'
+  defaults:
+    _controller: '\Drupal\addEmployee\Controller\addemployeeController::addemployee'
+    _title: 'Add Employee'
+  requirements:
+    _permission: 'access content'

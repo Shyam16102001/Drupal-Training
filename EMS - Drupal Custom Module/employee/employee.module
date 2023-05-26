@@ -1,0 +1,15 @@
+<?php
+
+function employee_theme($existing, $type, $theme, $path){
+    return [
+        'employeelist' => [
+            'variables' => [
+                'title' => '',
+                'details' => [],
+                'employee_form' => []
+            ]
+        ]
+    ];
+}
+
+?>

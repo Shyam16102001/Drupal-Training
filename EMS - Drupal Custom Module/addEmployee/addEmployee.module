@@ -1,0 +1,14 @@
+<?php
+
+function addemployee_theme($existing, $type, $theme, $path){
+    return [
+        'addemployee' => [
+            'variables' => [
+                'title' => '',
+                'form' => ''
+            ]
+        ]
+    ];
+}
+
+?>

@@ -1,0 +1,32 @@
+{{ attach_library('employee/employee-style') }}
+<table>
+  <thead>
+    <tr>
+      <th>Emp ID</th>
+      <th>Name</th>
+      <th>Salary</th>
+      <th>Hike</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for employee in details %}
+    <tr>
+      <td>{{ employee.EmpID }}</td>
+      <td>{{ employee.EmpName }}</td>
+      <td>{{ employee.EmpSalary }}</td>
+      <td class="hike-field">
+        <input
+          type="checkbox"
+          class="employee-checkbox"
+          name="employee[EmpID]"
+          value="1"
+        />
+        <input type="hidden" name="employee[EmpID]" value="{{ employee.EmpID }}" />
+        <div class="hike-percentage-container">
+          {{ employee_form[employee.EmpID] }}
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
